@@ -1,0 +1,48 @@
+<!--*******************************************************-->
+<!--	file		:		index.htm	   -->
+<!--	contents	:		webpage		   -->
+<!--	builder		:		Wim		   -->
+<!--	1st published	:		Nov. 27 2022	   -->
+<!--	www.wimsbits.nl			Copyright Wim	   -->
+<!--*******************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="48x48">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>To-Do App</title>
+    </head>
+    <body>
+            <!-- grid doos To-Do App & input -->
+            <div class="border top">
+                Gebouwd tijdens de Bit-academy cursus, na de modules JavaScript 'Intro en Pro&#40;ES6&#41;'.
+                <br />
+                Geplaatst als voorbeeld eigen JavaScript code.
+                <a href="../main50-e.htm">Terug naar it</a>
+            </div>
+            <div class="border grid-doos">
+                <div class="grid-item" id="kop">to-do</div>
+                <div class="grid-item">
+                    <form action="index.html" method="GET">
+                        <label>
+                            <input type="text" id="todonew" placeholder="Mijn nieuwe to-do...">
+                        </label>
+                        <button type="button" id="plus">Add+</button>
+                    </form>
+                </div>
+            </div>
+            <!-- grid box voor grid-item -->
+            <div class="border grid-box">
+                <div class="grid-item" id="gridItem"></div>
+                <h3>Todo</h3>
+                <div id="incomplete-tasks"></div>
+                <br />
+                <h3>Afgerond</h3>
+                <div id="completed-tasks"></div>
+            </div>
+    </body>
+</html>

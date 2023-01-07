@@ -1,0 +1,73 @@
+body {
+    background-color: #ffc;
+    color: #00f;
+}
+/* border-box: kijken vanuit de rand, niet vanuit de content */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top {
+    padding: 15px;
+    margin: 2rem;
+    background-color: #6f6;
+    line-height: 1.5;
+    max-width: 610px;
+}
+a:hover {
+    color: #f00;
+    font-weight: 600;
+}
+.border {
+    border-style: solid;
+    border-color: #06f;
+    border-width: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+.grid-doos {
+    display: grid;
+    max-width: 30rem;
+    grid-template-columns: auto auto;
+    margin: 2rem 2rem 0 6rem;
+    background-color: #0fc;
+}
+input {
+    background-color: #fc0;
+    border-radius: 15px;
+    margin: 10px 0 10px 0;
+    padding-left: 2rem;
+}
+.grid-box {
+    display: grid;
+    max-width: 30rem;
+    grid-template-columns: auto;
+    margin: 0 2rem 0 6rem;
+    background-color: #aff;
+}
+#kop {
+    display: grid;
+}
+#gridItem, .grid-item {
+    color: #333;
+}
+hr {
+    color: #000;
+    background-color: #000;
+    height: 5px;
+}
+#incomplete-tasks, #completed-tasks, h3, #kop {
+    padding: 0.5rem;
+}
+#incomplete-tasks > div{
+    background-color: #f30;
+    margin: 10px;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
+}
+#completed-tasks > div {
+    background-color: #0f0;
+    margin: 10px;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
+}
